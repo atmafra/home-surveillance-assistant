@@ -1,0 +1,20 @@
+[project]
+name = "home-surveillance-assistant"
+version = "0.1.0"
+description = "The objective of this project is to create a surveillance assistant for cameras in a domestic network, like domestic TCP cams. The software will first find the cameras in the network, then connect to their image streams and track the presence of humans in these streams."
+authors = [
+    {name = "Alexandre Teixeira Mafra",email = "alexandre.mafra@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "opencv-python (>=4.11.0.86,<5.0.0.0)",
+    "numpy (>=2.2.6,<3.0.0)",
+    "ultralytics (>=8.3.146,<9.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
